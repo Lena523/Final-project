@@ -273,12 +273,13 @@ body{
     .header-content{
         display: grid;
         grid-template-columns: 359px 231px;
-        column-gap: 777px;
+        -moz-column-gap: 777px;
+             column-gap: 777px;
         grid-template-rows: 43px 44px;
         margin-top: 33px;
 
-        @include onlylarge(1400px){column-gap: 52%;}
-        @include onlylarge(1300px){column-gap:0;justify-content: space-between;width:95%;}
+        @include onlylarge(1400px){-moz-column-gap: 52%;column-gap: 52%;}
+        @include onlylarge(1300px){-moz-column-gap:0;column-gap:0;justify-content: space-between;width:95%;}
         @include onlylarge(768px){grid-template-columns:1fr;grid-template-rows: 40px 50px;justify-items: center;}
 
         .left-content{
@@ -402,10 +403,11 @@ body{
     display: grid;
 	grid-template-columns: 428px 938px;
 	grid-template-rows: 438px 526px 294px;
-	column-gap: 37px;
+	-moz-column-gap: 37px;
+	     column-gap: 37px;
 	row-gap: 46px;
 
-    @include onlylarge(1400px){grid-template-columns: 35% 60%;column-gap:2%;row-gap: 2%;grid-template-rows: 34% 40% 22%;}
+    @include onlylarge(1400px){grid-template-columns: 35% 60%;-moz-column-gap:2%;column-gap:2%;row-gap: 2%;grid-template-rows: 34% 40% 22%;}
     @include onlylarge(900px){grid-template-rows: 150px 380px 455px 245px;grid-template-columns: 1fr;row-gap: 0;}
     @include onlylarge(450px){grid-template-rows: 91px 732px 270px 400px;}
 
@@ -482,10 +484,11 @@ body{
                 grid-template-columns: 327px 327px;
                 grid-template-rows: repeat(4,45px);
                 row-gap: 21px;
-                column-gap: 113px;
+                -moz-column-gap: 113px;
+                     column-gap: 113px;
 
-                @include onlylarge(1400px){grid-template-columns: 45% 45%;column-gap: 50px;grid-template-rows: repeat(4,20%);row-gap: 19px;}
-                @include onlylarge(1024px){column-gap: 30px;}
+                @include onlylarge(1400px){grid-template-columns: 45% 45%;-moz-column-gap: 50px;column-gap: 50px;grid-template-rows: repeat(4,20%);row-gap: 19px;}
+                @include onlylarge(1024px){-moz-column-gap: 30px;column-gap: 30px;}
                 @include onlylarge(450px){grid-template-columns: 1fr;grid-template-rows: repeat(7,45px);row-gap: 41px;}
 
                 legend{
@@ -703,10 +706,11 @@ body{
                 display: grid;
                 grid-template-columns: 332px 262px;
                 grid-template-rows: 71px;
-                column-gap: 226px;
+                -moz-column-gap: 226px;
+                     column-gap: 226px;
                 margin-bottom: 52px;
 
-                @include onlylarge(1400px){grid-template-columns: 50% 40%;grid-template-rows: 65px;column-gap: 50px;margin-bottom: 30px;}
+                @include onlylarge(1400px){grid-template-columns: 50% 40%;grid-template-rows: 65px;-moz-column-gap: 50px;column-gap: 50px;margin-bottom: 30px;}
                 @include onlylarge(450px){grid-template-columns: 1fr;grid-template-rows: 75px;}
 
                 legend{
@@ -755,7 +759,9 @@ body{
                         width:332px;
                         height:46px;
                         padding-left: 8px;
-                        appearance: none;
+                        -webkit-appearance: none;
+                           -moz-appearance: none;
+                                appearance: none;
     
                         @include onlylarge(1300px){max-width: 332px;width:85%;font-size: 10px;letter-spacing: normal;}
                         @include onlylarge(1024px){padding-left: 3px;}
@@ -809,11 +815,12 @@ body{
                 display: grid;
                 grid-template-columns: 327px 327px;
                 grid-template-rows: 53px 53px 53px 35px;
-                column-gap: 116px;
+                -moz-column-gap: 116px;
+                     column-gap: 116px;
                 row-gap: 18px;
 
-                @include onlylarge(1400px){grid-template-columns: 45% 45%;column-gap: 50px;grid-template-rows: 20% 20% 20% 15%;row-gap: 20px;}
-                @include onlylarge(1024px){column-gap: 30px;}
+                @include onlylarge(1400px){grid-template-columns: 45% 45%;-moz-column-gap: 50px;column-gap: 50px;grid-template-rows: 20% 20% 20% 15%;row-gap: 20px;}
+                @include onlylarge(1024px){-moz-column-gap: 30px;column-gap: 30px;}
                 @include onlylarge(450px){display: none;}
 
                 input{
@@ -1041,10 +1048,11 @@ body{
             grid-template-columns: 327px 327px;
             grid-template-rows: 45px 45px;
             row-gap: 21px;
-            column-gap: 116px;
+            -moz-column-gap: 116px;
+                 column-gap: 116px;
 
-            @include onlylarge(1400px){grid-template-columns: 45% 45%;column-gap: 50px;row-gap: 18px;grid-template-rows: 45px 45px;}
-            @include onlylarge(1024px){column-gap: 30px;}
+            @include onlylarge(1400px){grid-template-columns: 45% 45%;-moz-column-gap: 50px;column-gap: 50px;row-gap: 18px;grid-template-rows: 45px 45px;}
+            @include onlylarge(1024px){-moz-column-gap: 30px;column-gap: 30px;}
             @include onlylarge(450px){grid-template-columns: 1fr;grid-template-rows: 45px 45px 45px;}
 
             .old-parole{

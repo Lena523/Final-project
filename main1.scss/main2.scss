@@ -800,7 +800,8 @@ body{
         display: grid;
         grid-template-columns: 614px 705px;
         grid-template-rows: 641px;
-        column-gap: 47px;
+        -moz-column-gap: 47px;
+             column-gap: 47px;
 
         @include onlylarge(1400px){width:100%;grid-template-columns: 1fr 1fr;}
         @include onlylarge(1024px){grid-template-rows: 500px;}
@@ -841,7 +842,8 @@ body{
                     width:100%;
                     height:100%;
                     position: absolute;
-                    object-fit: cover;
+                    -o-object-fit: cover;
+                       object-fit: cover;
 
                     @include onlylarge(1400px){height:80%;}
                     @include onlylarge(1024px){height:70%;}
@@ -884,7 +886,8 @@ body{
                 grid-template-columns: 14px 670px;
                 grid-template-rows: repeat(5,30px);
                 align-content: flex-start;
-                column-gap: 15px;
+                -moz-column-gap: 15px;
+                     column-gap: 15px;
 
                 @include onlylarge(1400px){grid-template-columns: 1fr 30fr;}
 
@@ -955,10 +958,11 @@ body{
         grid-template-columns: 155px 1170px;
         grid-template-rows: repeat(5,62px);
         align-items: flex-start;
-        column-gap: 35px;
+        -moz-column-gap: 35px;
+             column-gap: 35px;
 
         @include onlylarge(1400px){grid-template-columns: 1fr 7fr;}
-        @include onlylarge(768px){column-gap: 20px;}
+        @include onlylarge(768px){-moz-column-gap: 20px;column-gap: 20px;}
         @include onlylarge(600px){grid-template-rows: 100px 100px;}
         @include onlylarge(450px){row-gap: 20px;}
 
@@ -1038,12 +1042,13 @@ body{
         display: grid;
         grid-template-columns: 400px 822px;
         grid-template-rows: 448px;
-        column-gap: 170px;
+        -moz-column-gap: 170px;
+             column-gap: 170px;
         margin-left: 40px;
         padding-top: 50px;
         padding-bottom: 53px;
 
-        @include onlylarge(1400px){grid-template-columns: 30% 70%;margin-left: 0;column-gap:2%}
+        @include onlylarge(1400px){grid-template-columns: 30% 70%;margin-left: 0;-moz-column-gap:2%;column-gap:2%}
         @include onlylarge(1300px){padding-bottom: 0;}
         @include onlylarge(1024px){grid-template-columns: 1fr;grid-template-rows: 170px 500px;}
         @include onlylarge(768px){padding-top: 0;}
