@@ -1602,6 +1602,7 @@ body {
   .my-page .pages .right-bottom fieldset {
     grid-template-columns: 1fr;
     grid-template-rows: 45px 45px 45px;
+    margin-top: -25px;
   }
 }
 .my-page .pages .right-bottom fieldset .old-parole {
@@ -1738,6 +1739,11 @@ footer {
   background-color: #B8C3CB;
   padding-top: 34px;
   padding-bottom: 32px;
+}
+@media only screen and (max-width: 450px) {
+  footer {
+    margin-top: -30px;
+  }
 }
 footer .logo {
   display: -webkit-box;

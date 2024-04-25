@@ -1073,7 +1073,7 @@ body{
 
             @include onlylarge(1400px){grid-template-columns: 45% 45%;-moz-column-gap: 50px;column-gap: 50px;row-gap: 18px;grid-template-rows: 45px 45px;}
             @include onlylarge(1024px){-moz-column-gap: 30px;column-gap: 30px;}
-            @include onlylarge(450px){grid-template-columns: 1fr;grid-template-rows: 45px 45px 45px;}
+            @include onlylarge(450px){grid-template-columns: 1fr;grid-template-rows: 45px 45px 45px;margin-top: -25px;}
 
             .old-parole{
                 grid-row: 1;
@@ -1165,6 +1165,8 @@ footer{
     background-color: #B8C3CB;
 	padding-top: 34px;
 	padding-bottom: 32px;
+
+    @include onlylarge(450px){margin-top: -30px;}
 
     .logo{
         display: flex;
