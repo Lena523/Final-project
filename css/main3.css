@@ -96,7 +96,33 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .container-first header .menu ul {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+    background-color: rgba(9, 40, 57, 0.8);
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    color: #fff;
+    -webkit-transition: 1s;
+    transition: 1s;
+    float: none;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container-first header .menu ul.mob-menu {
+    left: 0;
   }
 }
 .container-first header .menu ul li a {
@@ -112,8 +138,27 @@ body {
     font-size: 10px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .container-first header .menu ul li a {
+    font-size: 24px;
+    color: white;
+  }
+}
 .container-first header .menu ul li a:hover {
   font-weight: 700;
+}
+.container-first header .menu ul li.close {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .container-first header .menu ul li.close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 20px;
+    color: #fff;
+  }
 }
 .container-first header .menu ul li:hover {
   -webkit-transform: scale(1.2);
@@ -179,16 +224,6 @@ body {
     width: 95%;
   }
 }
-.container-first header .right-side .burger .circle {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 100%;
-  display: none;
-  border: 1px solid black;
-}
 @media only screen and (max-width: 1024px) {
   .container-first header .right-side .search, .container-first header .right-side .cart, .container-first header .right-side .heart, .container-first header .right-side .person, .container-first header .right-side .burger {
     width: 25px;
@@ -215,7 +250,7 @@ body {
   }
 }
 .container-first header .right-side .search a.circle:hover, .container-first header .right-side .cart a.circle:hover, .container-first header .right-side .heart a.circle:hover, .container-first header .right-side .person a.circle:hover, .container-first header .right-side .burger a.circle:hover {
-  background-color: #52b4f1;
+  background-color: rgba(9, 40, 57, 0.8);
   -webkit-transform: scale(120%);
           transform: scale(120%);
 }
@@ -306,23 +341,23 @@ body {
 .container-first .header-content {
   display: grid;
   grid-template-columns: 359px 231px;
+  -moz-column-gap: 777px;
   -webkit-column-gap: 777px;
-     -moz-column-gap: 777px;
           column-gap: 777px;
   grid-template-rows: 43px 44px;
   margin-top: 33px;
 }
 @media only screen and (max-width: 1400px) {
   .container-first .header-content {
+    -moz-column-gap: 52%;
     -webkit-column-gap: 52%;
-       -moz-column-gap: 52%;
             column-gap: 52%;
   }
 }
 @media only screen and (max-width: 1300px) {
   .container-first .header-content {
+    -moz-column-gap: 0;
     -webkit-column-gap: 0;
-       -moz-column-gap: 0;
             column-gap: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -508,16 +543,16 @@ body {
   display: grid;
   grid-template-columns: 428px 938px;
   grid-template-rows: 438px 526px 294px;
+  -moz-column-gap: 37px;
   -webkit-column-gap: 37px;
-     -moz-column-gap: 37px;
           column-gap: 37px;
   row-gap: 46px;
 }
 @media only screen and (max-width: 1400px) {
   .my-page .pages {
     grid-template-columns: 35% 60%;
+    -moz-column-gap: 2%;
     -webkit-column-gap: 2%;
-       -moz-column-gap: 2%;
             column-gap: 2%;
     row-gap: 2%;
     grid-template-rows: 34% 40% 22%;
@@ -665,15 +700,15 @@ body {
   grid-template-columns: 327px 327px;
   grid-template-rows: repeat(4, 45px);
   row-gap: 21px;
+  -moz-column-gap: 113px;
   -webkit-column-gap: 113px;
-     -moz-column-gap: 113px;
           column-gap: 113px;
 }
 @media only screen and (max-width: 1400px) {
   .my-page .pages .right-top form fieldset {
     grid-template-columns: 45% 45%;
+    -moz-column-gap: 50px;
     -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
             column-gap: 50px;
     grid-template-rows: repeat(4, 20%);
     row-gap: 19px;
@@ -681,8 +716,8 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .my-page .pages .right-top form fieldset {
+    -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
             column-gap: 30px;
   }
 }
@@ -986,8 +1021,8 @@ body {
   display: grid;
   grid-template-columns: 332px 262px;
   grid-template-rows: 71px;
+  -moz-column-gap: 226px;
   -webkit-column-gap: 226px;
-     -moz-column-gap: 226px;
           column-gap: 226px;
   margin-bottom: 52px;
 }
@@ -995,8 +1030,8 @@ body {
   .my-page .pages .right-middle form .part-top {
     grid-template-columns: 50% 40%;
     grid-template-rows: 65px;
+    -moz-column-gap: 50px;
     -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
             column-gap: 50px;
     margin-bottom: 30px;
   }
@@ -1089,8 +1124,8 @@ body {
   height: 46px;
   padding-left: 8px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media only screen and (max-width: 1300px) {
   .my-page .pages .right-middle form .part-top .address select {
@@ -1203,16 +1238,16 @@ body {
   display: grid;
   grid-template-columns: 327px 327px;
   grid-template-rows: 53px 53px 53px 35px;
+  -moz-column-gap: 116px;
   -webkit-column-gap: 116px;
-     -moz-column-gap: 116px;
           column-gap: 116px;
   row-gap: 18px;
 }
 @media only screen and (max-width: 1400px) {
   .my-page .pages .right-middle form .part-bottom {
     grid-template-columns: 45% 45%;
+    -moz-column-gap: 50px;
     -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
             column-gap: 50px;
     grid-template-rows: 20% 20% 20% 15%;
     row-gap: 20px;
@@ -1220,8 +1255,8 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .my-page .pages .right-middle form .part-bottom {
+    -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
             column-gap: 30px;
   }
 }
@@ -1542,15 +1577,15 @@ body {
   grid-template-columns: 327px 327px;
   grid-template-rows: 45px 45px;
   row-gap: 21px;
+  -moz-column-gap: 116px;
   -webkit-column-gap: 116px;
-     -moz-column-gap: 116px;
           column-gap: 116px;
 }
 @media only screen and (max-width: 1400px) {
   .my-page .pages .right-bottom fieldset {
     grid-template-columns: 45% 45%;
+    -moz-column-gap: 50px;
     -webkit-column-gap: 50px;
-       -moz-column-gap: 50px;
             column-gap: 50px;
     row-gap: 18px;
     grid-template-rows: 45px 45px;
@@ -1558,8 +1593,8 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .my-page .pages .right-bottom fieldset {
+    -moz-column-gap: 30px;
     -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
             column-gap: 30px;
   }
 }

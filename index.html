@@ -8,8 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Montserrat:wght@100..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Montserrat:wght@100..900&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href="css/main1.css" rel="stylesheet">
 </head>
 <body>
@@ -25,11 +30,12 @@
                  <li><a href="#" title="useful" target="_blank">Полезное</a></li>
                  <li><a href="#" title="contacts" target="_blank">Контакты</a></li>
                  <li><a href="#" title="currency" target="_blank">Грн <img src="imgIndex1/arr1.svg" alt="arrow"></a></li>
+                 <li class="close" id="close-btn">X</li>
                 </ul>
              </nav>
              <div class="right-side center">
                 <div class="burger">
-                    <a href="#" title="menu" target="_blank" class="circle"><img src="imgIndex1/burg.svg" alt="burger"></a>
+                    <a href="#" title="menu"><img src="imgIndex1/burg.svg" alt="burger"></a>
                 </div>
                 <div class="search">
                     <a href="#" class="circle" title="search" target="_blank"><img src="imgIndex1/search.svg" alt="search"></a>
@@ -53,10 +59,22 @@
             </header>
             <div class="head-content center">
               <div class="element1 center">
-                <div class="list"></div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                      <div class="swiper-slide"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="line"><hr></div>
+                <div class="list">
                 <h1>Медитативные практики</h1>
                 <p>для жизни</p>
                </div>
+              </div>
               <div class="element2"><a href="#my-id" target="_blank"><img src="imgIndex1/scroll1.png" alt="scroll"></a></div>
               <div class="element3 animate__animated animate__flip wow">
                     <h4>Курс «Основы Усиления Личности»</h4>
@@ -134,35 +152,35 @@
             <div class="blocks">
             <div class="second-block">
                 <h4 class="sb">Миссия школы</h4>
-            <p class="info-show">обучить человека технологиям духовного совершенствования Личности, 
+            <p class="info-hide" id="info1">обучить человека технологиям духовного совершенствования Личности, 
                 которые позволяют понять свое Предназначение на духовном и материальном 
                 планах и обеспечить гармоничную материализацию целей, желаний и запросов учащихся</p>
             </div>
-                <div class="round1">
-                <img src="imgIndex1/round1.svg" alt="round1">
-                <img src="imgIndex1/-.svg" alt="minus">
-                <img class="hidden" src="imgIndex1/round1-copy.svg" alt=round>
-                <img class="hidden1" src="imgIndex1/-.svg" alt="minus">
-               </div>
-            <div class="third-block">
-                <h4 class="tb">Цель обучения</h4>
-            <p class="info-hide">обучить человека технологиям духовного совершенствования Личности, 
-                которые позволяют понять свое Предназначение на духовном и материальном 
-                планах и обеспечить гармоничную материализацию целей, желаний и запросов учащихся</p>
-            </div>
-              <div class="round2">
+                <div class="round1 close" id="plus1">
                 <img src="imgIndex1/round1.svg" alt="round1">
                 <img src="imgIndex1/+.svg" alt="plus">
                 <img class="hidden" src="imgIndex1/round1-copy.svg" alt=round>
-                <img class="hidden2" src="imgIndex1/+.svg" alt="plus">
+                <img class="hidden1" src="imgIndex1/pluss.svg" alt="minus">
+               </div>
+            <div class="third-block">
+                <h4 class="tb">Цель обучения</h4>
+            <p class="info-hide" id="info2">обучить человека технологиям духовного совершенствования Личности, 
+                которые позволяют понять свое Предназначение на духовном и материальном 
+                планах и обеспечить гармоничную материализацию целей, желаний и запросов учащихся</p>
+            </div>
+              <div class="round2 close" id="plus2">
+                <img src="imgIndex1/round1.svg" alt="round1">
+                <img src="imgIndex1/+.svg" alt="plus">
+                <img class="hidden" src="imgIndex1/round1-copy.svg" alt=round>
+                <img class="hidden2" src="imgIndex1/pluss.svg" alt="plus">
               </div>
             <div class="fourth-block">
                 <h4 class="fb">Наши принципы</h4>
-            <p class="info-hide">обучить человека технологиям духовного совершенствования Личности, 
+            <p class="info-hide" id="info3">обучить человека технологиям духовного совершенствования Личности, 
                 которые позволяют понять свое Предназначение на духовном и материальном 
                 планах и обеспечить гармоничную материализацию целей, желаний и запросов учащихся</p>
            </div>
-                <div class="round3">
+                <div class="round3 close" id="plus3">
                 <img src="imgIndex1/round1.svg" alt="round1">
                 <img src="imgIndex1/+.svg" alt="plus">
                 <img class="hidden" src="imgIndex1/round1-copy.svg" alt=round>
@@ -183,7 +201,7 @@
                         <p>ТАТЬЯНА ЛУБАНОВА</p>
                         <p>ОСНОВАТЕЛЬ ШКОЛЫ</p>
                         <hr>
-                        <a href="#"><img src="imgIndex1/details.svg" alt="details"></a>
+                        <div class="more-info"><a href="#" title="more-info" target="_blank"><img src="imgIndex1/details.svg" alt="details"></a></div>
                     </div>
                 </div>
                 <div class="master2">
@@ -192,29 +210,24 @@
                         <p>НАТАЛЬЯ МИЛОВИДОВА</p>
                         <p>СООСНОВАТЕЛЬ ШКОЛЫ</p>
                         <hr>
-                        <a href="#" title="more-info" target="_blank"><img src="imgIndex1/details.svg" alt="details"></a>
+                        <div class="more-info"><a href="#" title="more-info" target="_blank"><img src="imgIndex1/details.svg" alt="details"></a></div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="container-fifth">
             <div class="content">
-                <div class="pictures">
-                    <div class="picture1">
-                      <img src="imgIndex1/pic1.png" alt="picture1" title="slide1">
-                      <div class="img"></div>
-                    </div>
-                    <div class="picture2"><img src="imgIndex1/pic2.png" alt="picture2" title="slide2"></div>
-                    <div class="picture3">
-                      <img src="imgIndex1/pic3.png" alt="picture3" title="slide3">
-                      <div class="img"></div>
-                    </div>
+                <div class="swiper mySwiper pictures">
+                <div class="pictures swiper-wrapper">
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic0.jpg" alt="picture2" title="slide2"></div>
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic5.jpg" alt="picture2" title="slide2"></div>
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic1.jpg" alt="picture2" title="slide2"></div>
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic2.jpg" alt="picture2" title="slide2"></div>
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic3.jpg" alt="picture2" title="slide2"></div>
+                    <div class="picture swiper-slide"><img src="imgIndex1/magic4.jpg" alt="picture3" title="slide3"></div>
                 </div>
-                <div class="arrow-nav">
-                    <img src="imgIndex1/mob-arr-left.svg" alt="arrow-left">
-                    <img src="imgIndex1/mob-arr-right.svg" alt="arrow-right">
-                  </div>
-            <hr>
+                <div class="swiper-pagination"></div>
+             </div>
             <div class="magic-info animate__animated animate__rubberBand animate__slow 2s wow">
                 <p>СТАТЬИ</p>
                 <h4>высшая магия</h4>
@@ -288,5 +301,38 @@
         <script src="js/wow.js"></script>
         <script src="js/main.js"></script>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+      <script src="js/script.js"></script>
 </body>
 </html>
