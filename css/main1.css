@@ -77,6 +77,168 @@ body {
 .container-first header {
   height: 62px;
 }
+.container-first header .registration {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  width: 521px;
+  height: 461px;
+  background-color: white;
+  left: 30%;
+  top: 10%;
+  padding-left: 22px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .container-first header .registration {
+    left: 3%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-first header .registration {
+    width: 75%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+.container-first header .registration.reg-menu {
+  display: block;
+}
+.container-first header .registration form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 54px 45px 45px 35px 55px;
+  row-gap: 21px;
+  margin-bottom: 31px;
+}
+@media only screen and (max-width: 600px) {
+  .container-first header .registration form {
+    grid-template-rows: 54px 45px 61px 55px;
+  }
+}
+.container-first header .registration form .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+.container-first header .registration form .title label {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.container-first header .registration form .enter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .container-first header .registration form .enter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-first header .registration form .enter div:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-first header .registration form .enter div:last-child {
+    margin-bottom: 5px;
+  }
+}
+.container-first header .registration form .mail {
+  border-bottom: 1px solid black;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.container-first header .registration form .mail input {
+  background-color: transparent;
+  border: 0;
+}
+.container-first header .registration form .mail label {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.container-first header .registration form .parole {
+  border-bottom: 1px solid black;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.container-first header .registration form .parole input {
+  background-color: transparent;
+  border: 0;
+}
+.container-first header .registration form .parole label {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.container-first header .registration form .get-registed {
+  width: 100%;
+  height: 55px;
+  background-color: #D9D9D1;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 11px;
+}
+.container-first header .registration form .get-registed img {
+  display: block;
+  margin: 0 auto;
+}
+.container-first header .registration p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.container-first header .registration .button-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 126px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+.container-first header .registration .button-set .button-left img:last-child {
+  position: absolute;
+  left: 22px;
+  top: 15px;
+}
+.container-first header .registration .button-set .button-right img:last-child {
+  position: absolute;
+  left: 85px;
+  top: 13px;
+}
 .container-first header .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,7 +1142,7 @@ body {
   left: calc(50% - 27px);
 }
 .container-second .cards .first-card .circle .number, .container-second .cards .second-card .circle .number, .container-second .cards .third-card .circle .number {
-  margin-top: -50px;
+  margin-top: -55px;
   font-weight: 700;
   font-family: "Cormorant";
   font-size: 36px;
@@ -992,7 +1154,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .container-second .cards .first-card .circle .number, .container-second .cards .second-card .circle .number, .container-second .cards .third-card .circle .number {
     font-size: 30px;
-    margin-top: -46px;
+    margin-top: -50px;
   }
 }
 @media only screen and (max-width: 900) {
@@ -1002,7 +1164,7 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .container-second .cards .first-card .third-card .circle .number, .container-second .cards .second-card .third-card .circle .number, .container-second .cards .third-card .third-card .circle .number {
-    margin-top: 53px;
+    margin-top: -53px;
   }
 }
 @media only screen and (max-width: 900px) {

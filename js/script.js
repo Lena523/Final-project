@@ -6,6 +6,14 @@ document.querySelector('#close-btn').onclick = function(){
     document.querySelector('.menu ul').classList.remove('mob-menu');
 }
 
+document.querySelector('.person').onclick = function(){
+    document.querySelector('.registration').classList.add('reg-menu');
+}
+
+document.querySelector('.cross').onclick = function(){
+    document.querySelector('.registration').classList.remove('reg-menu');
+}
+
 
 function switchParagraph1(){
     var btn1 = document.querySelector('#plus1');
